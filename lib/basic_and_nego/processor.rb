@@ -4,7 +4,8 @@ require 'basic_and_nego/auth'
 
 module BasicAndNego
   class Processor
-    DEFAULT_SERVICE = "http@#{Socket::gethostname}"
+    # DEFAULT_SERVICE = "http@#{Socket::gethostname}"
+    DEFAULT_SERVICE = "kerberos.thedemoco.com"
 
     def initialize(env, logger, realm, keytab, service)
       @env = env
@@ -19,13 +20,17 @@ module BasicAndNego
     end
 
     def process_request
+      puts "processing request..."
       if authenticated
+        puts "Authenticated"
         @logger.debug "User #{@session['REMOTE_USER']} already authenticated"
         @env['REMOTE_USER'] = @session['REMOTE_USER']
       else
+        puts "Authenticating..."
         @logger.debug "User not authenticated : delegate to authenticator"
 
         if authenticate
+          puts "authenticated!"
           @env['REMOTE_USER'] = client_name
           @session['REMOTE_USER'] = client_name if @session
         end
@@ -51,7 +56,9 @@ module BasicAndNego
     end
 
     def authenticate
-      @authenticator.process
+      puts @authenticator.process
+      puts "done"
+      puts @authenticator.response.nil?
       @authenticator.response.nil?
     end
 

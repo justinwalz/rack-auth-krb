@@ -13,6 +13,8 @@ module BasicAndNego
 
       def process
         @logger.debug "Negotiate scheme proposed by client"
+        @logger.debug @response.inspect
+
         authenticate unless @response
         verify_token unless @response
         set_headers unless @response
@@ -28,6 +30,7 @@ module BasicAndNego
       end
 
       def authenticate
+        puts "Negotiate #authenticate with request #{@request.inspect} and params #{@request.params}"
         token = ::Base64.strict_decode64(@request.params)
         @out_tok = @gss.authenticate(token)
       rescue GSSAPI::GssApiError => e

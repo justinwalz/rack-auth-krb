@@ -1,0 +1,500 @@
+  281  git log
+  282  git pull
+  283  cd ../squid/
+  284  ls
+  285  git st
+  286  vagrant global-status
+  287  vagrant ssh
+  288  vagrant up
+  289  cd /Users/justinw/sandbox/kerberos/KerbTestEnvironment
+  290  vagrant destroy
+  291  cd  /Users/justinw/sandbox/clients/services   
+  292  vagrant destroy
+  293  cd /Users/justinw/bitium/squid 
+  294  vagrant up
+  295  vagrant ssh
+  296  cd ../maxwell/
+  297  tail -f log/development.log 
+  298  script/kill_apps ; foreman start
+  299  script/kill_apps ; foreman start
+  300  bundle exec rake db:migrate
+  301  script/kill_apps ; foreman start
+  302  script/kill_apps ; foreman start
+  303  vagrant ssh
+  304  tail -f log/development.log 
+  305  cd
+  306  cd bitium/newton
+  307  run 
+  308  RAILS_ENV=DEV bundle exec rake bitium:one_off:populate_empty_installation_name
+  309  bundle exec rails c
+  310  ls
+  311  git branch
+  312  git st
+  313  git st
+  314  git log
+  315  git log -p
+  316  pwd
+  317  git st
+  318  git d
+  319  git add .
+  320  git ci -m "more commenting"
+  321  git st
+  322  git st
+  323  git log
+  324  git st
+  325  ls
+  326  git branch
+  327  git branch | grep squid
+  328  git branch
+  329  git co master
+  330  git pull
+  331  git st
+  332  gem install propono
+  333  cd sandbox/clients/
+  334  ls
+  335  ruby publisher.rb 
+  336  irb
+  337  ls
+  338  bundle exec ruby publisher.rb 
+  339  bundle exec ruby publisher.rb 
+  340  bundle exec ruby publisher.rb 
+  341  ls
+  342  pwd
+  343  mkdir services
+  344  mkdir clients
+  345  cd clients/
+  346  vagrant init
+  347  ls
+  348  vim Vagrantfile 
+  349  mate .
+  350  cd ..
+  351  ls
+  352  cat publisher.rb 
+  353  ls
+  354  ls services/
+  355  ls clients/
+  356  ls
+  357  mv clients/Vagrantfile services/
+  358  ls
+  359  mate .
+  360  ls
+  361  cd services/
+  362  ls
+  363  cd ..
+  364  ls
+  365  touch README
+  366  cd services/
+  367  ls
+  368  vagrant up
+  369  vagrant up
+  370  ls
+  371  ls
+  372  vagrant up
+  373  vagrant ssh
+  374  cd s
+  375  cd sandbox/
+  376  mkdir clients
+  377  cd clients/
+  378  ls
+  379  ls
+  380  pwd
+  381  touch publisher.rb
+  382  touch subscriber.rb
+  383  mate .
+  384  ruby subscriber.rb 
+  385  ruby subscriber.rb 
+  386  ls
+  387  gem
+  388  bundle
+  389  ls
+  390  bundle --help
+  391  bundle init
+  392  ls
+  393  bundle install
+  394  ls
+  395  bundle exec ruby subscriber.rb 
+  396  ls
+  397  cd ../..
+  398  ls
+  399  cd squid
+  400  cd ..
+  401  ls
+  402  cd 41a24a7252fa92633c02/
+  403  ls
+  404  cd ..
+  405  ls
+  406  cd 
+  407  cd bitium/squid/
+  408  ls
+  409  cat Vagrantfile 
+  410  pwd
+  411  ls
+  412  git st
+  413  git d
+  414  git st
+  415  git st
+  416  git d
+  417  git add .
+  418  git ci -m "a bunch of comments and stuff"
+  419  git st
+  420  git log
+  421  git co master
+  422  git co -b jw_primary_auth_stuck_3587
+  423  git st
+  424  bundle exec rake db:migrate
+  425  git st
+  426  git d
+  427  git co -b db/schema.rb
+  428  git st
+  429  git co jw_primary_auth_stuck_3587
+  430  git branch
+  431  git branch -D db/schema.rb
+  432  git st
+  433  git co -- db/schema.rb
+  434  git st
+  435  ls
+  436  git st
+  437  git d
+  438  git add .
+  439  git ci -m "comments"
+  440  git branch
+  441  git co jw_broswer_domain_auth_5223
+  442  curl --negotiate ad.thedemoco.com
+  443  curl --headers --negotiate ad.thedemoco.com
+  444  curl --manual
+  445  curl -k -s -D - http://trust.bitium.com/resources/topic/case-studies
+  446  curl -k -s -D - http://trust.bitiucurl -k -s -D - http://trust.bitium.com/resources/topic/case-studies -o /dev/nullm.com/resources/topic/case-studies
+  447  curl -k -s -D - http://trust.bitium.com/resources/topic/case-studies -o /dev/null
+  448  curl -k -s -D - http://trust.bitium.com/resources/topic/case-studies -o /dev/null
+  449  curl -k -s -D - ad.thedemoco.com -o /dev/null
+  450  curl -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  451  curl -k -s -D - ad.thedemoco.com:88
+  452  curl --negotiate -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  453  curl --negotiates -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  454  curl --negotiate -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  455  bundle exec rails c
+  456  chromium-browser
+  457  man curl
+  458  curl --negotiate
+  459  curl --negotiate http://localhost:14000/webhdfs/v1/?op=liststatus
+  460  ls
+  461  sudo stunnel
+  462  sudo tunnels
+  463  cd
+  464  cd sandbox/
+  465  mkdir kerberos
+  466  cd kerberos/
+  467  ls
+  468  $ git clone      https://gist.github.com/econchick/99699a6fee2eb44d13b0      KerbTestEnvironment
+  469  $ cd KerbTestEnvironment
+  470  ls
+  471  git clone https://gist.github.com/econchick/99699a6fee2eb44d13b0 KerbTestEnvironment
+  472  cd KerbTestEnvironment/
+  473  ls
+  474  vagrant up
+  475  pwd
+  476  ls
+  477  cd 
+  478  ls
+  479  cd bitium/squid/
+  480  ls
+  481  cat Vagrantfile 
+  482  vagrant ssh
+  483  vagrant ssh
+  484  cd
+  485  cd sandbox/
+  486  mkdir kerberos
+  487  cd kerberos/
+  488  ls
+  489  rm -rf KerbTestEnvironment/
+  490  ls
+  491  vagrant init
+  492  vim Vagrantfile 
+  493  mate .
+  494  vagrant up
+  495  vagrant ssh
+  496  vagrant 
+  497  vagrant halt
+  498  vagrant up
+  499  vagrant ssh
+  500  vagrant reload && vagrant ssh
+  501  find / -name mkmf.log
+  502  cd ../../justinwalz/
+  503  git clone https://github.com/justinwalz/rack-auth-krb.git
+  504  ls
+  505  cd rack-auth-krb/
+  506  ls
+  507  bundle install
+  508  ls
+  509  rspec
+  510  ls
+  511  ack rkerberos
+  512  ack rkerberos
+  513  rspec
+  514  rspec
+  515  rspec
+  516  rspec
+  517  rspec
+  518  rspec
+  519  rspec
+  520  rspec
+  521  rspec
+  522  rspec
+  523  rspec
+  524  rspec
+  525  rspec
+  526  rspec
+  527  rspec
+  528  rspec
+  529  rspec
+  530  rspec
+  531  rspec
+  532  rspec
+  533  rspec
+  534  rspec
+  535  rspec
+  536  rspec
+  537  rspec
+  538  rspec
+  539  rspec
+  540  rspec
+  541  rspec
+  542  rspec
+  543  rspec
+  544  rspec
+  545  rspec
+  546  rspec
+  547  rspec
+  548  git d spec/basic_and_nego/processor_spec.rb
+  549  rspec
+  550  rspec
+  551  rspec
+  552  rspec
+  553  rspec
+  554  rspec
+  555  rspec
+  556  rspec
+  557  rspec
+  558  rspec
+  559  rspec
+  560  rspec
+  561  rspec
+  562  rspec
+  563  rspec
+  564  git st
+  565  ack rkerberos
+  566  irb
+  567  ls
+  568  pwd
+  569  irb
+  570  irb
+  571  gem install
+  572  rake install
+  573  ls
+  574  gem install rack-auth-krb
+  575  ls
+  576  pwd
+  577  ls
+  578  pwd
+  579  bundle install
+  580  pwd
+  581  ls
+  582  git st
+  583  git add .
+  584  git ci -m "switching from rkerberos to krb5-auth"
+  585  git st
+  586  git push origin master
+  587  ls
+  588  rspec
+  589  rspec spec/rack/rack_krb_spec.rb 
+  590  rspec spec/rack/rack_krb_spec.rb 
+  591  rspec spec/rack/rack_krb_spec.rb 
+  592  rspec spec/rack/rack_krb_spec.rb 
+  593  rspec spec/rack/rack_krb_spec.rb 
+  594  rspec spec/rack/rack_krb_spec.rb 
+  595  rspec spec/rack/rack_krb_spec.rb 
+  596  rspec spec/rack/rack_krb_spec.rb 
+  597  rspec spec/rack/rack_krb_spec.rb 
+  598  rspec spec/rack/rack_krb_spec.rb 
+  599  rspec spec/rack/rack_krb_spec.rb 
+  600  ls
+  601  rspec spec/rack/rack_krb_spec.rb 
+  602  rspec spec/rack/rack_krb_spec.rb 
+  603  rspec spec/rack/rack_krb_spec.rb 
+  604  rspec spec/rack/rack_krb_spec.rb 
+  605  rspec spec/rack/rack_krb_spec.rb 
+  606  rspec spec/rack/rack_krb_spec.rb 
+  607  rspec spec/rack/rack_krb_spec.rb 
+  608  rspec spec/rack/rack_krb_spec.rb 
+  609  kinit
+  610  rspec spec/rack/rack_krb_spec.rb 
+  611  bundle show krb5_auth
+  612  bundle show krb5_auth
+  613  irb
+  614  ls
+  615  bundle install
+  616  bundle install
+  617  gem show timfel-krb5-auth
+  618  bundle show timfel-krb5-auth
+  619  bundle install
+  620  irb
+  621  bundle exec irb
+  622  hgrep spec
+  623  rspec spec/rack/rack_krb_spec.rb 
+  624  ls /Users/justinw/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/extensions/x86_64-darwin-14/2.1.0-static
+  625  rspec spec/rack/rack_krb_spec.rb 
+  626  bundle install
+  627  rspec spec/rack/rack_krb_spec.rb 
+  628  bundle update
+  629  rspec spec/rack/rack_krb_spec.rb 
+  630  gem update
+  631  bundle show timfel-krb5-auth
+  632  bundle show rack-auth-krb
+  633  ls
+  634  bundle install
+  635  gem pristine krb5-auth --version 0.7
+  636  bundle install
+  637  rspec spec/rack/rack_krb_spec.rb 
+  638  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  639  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  640  ls
+  641  bundle exec rspec spec/rack/rack_krb_spec.rb
+  642  bundle exec rspec spec/rack/rack_krb_spec.rb
+  643  git st
+  644  git d Gemfile
+  645  git d Gemfile.lock
+  646  bundle exec rspec spec/rack/rack_krb_spec.rb
+  647  bundle exec rspec spec/rack/rack_krb_spec.rb
+  648  bundle exec irb
+  649  bundle exec rspec spec/rack/rack_krb_spec.rb
+  650  bundle exec rspec spec/rack/rack_krb_spec.rb
+  651  bundle exec rspec spec/rack/rack_krb_spec.rb
+  652  klist -k
+  653  klist
+  654  kinit
+  655  echo $KRB5_KTNAME
+  656  cat /etc/krb5.conf 
+  657  cat /etc/krb5.conf 
+  658  sudo vim /etc/krb5.conf 
+  659  kadmin
+  660  sudo vim /etc/krb5.conf 
+  661  kadmin
+  662  kadmin -p justin/admin
+  663  kadmin -p justin/admin -w Green123$
+  664  ktadd
+  665  kadmin ktadd
+  666  kadmin ktadd -p justin/admin:Green123$
+  667  vim /etc/krb5.conf 
+  668  kadmin kinit -S kadmin/admin adminuser@REALM
+  669  kinit -S kadmin/admin adminuser@REALM
+  670  kadmin -r kerberos.thedemoco.com -p justin/admin@kerberos.thedemoco.com
+  671  which kadmin
+  672  which kinit
+  673  ktutil
+  674  klist
+  675  ktutil --list
+  676  ktutil list
+  677  ktutil get 
+  678  ktutil get -p justin/admin -r kerberos.thedemoco.com 
+  679  ktutil get -p justin/admin -r kerberos.thedemoco.com justin/admin
+  680  ktutil get  -r kerberos.thedemoco.com justin/admin
+  681  kinit
+  682  ktutil get  -r kerberos.thedemoco.com justin/admin
+  683  ls
+  684  klist
+  685  klist
+  686  klist
+  687  klist
+  688  kinit -p justin/admin
+  689  ls
+  690  ls
+  691  ktutil
+  692  man ktutil
+  693  ktutil list
+  694  man ktutil
+  695  ktutil add -p justin/admin
+  696  klist -e
+  697  cat /etc/krb5.conf 
+  698  ktutil add -p justin/admin
+  699  list
+  700  klist
+  701  ktutil
+  702  ktutil -v
+  703  ktutil add -p justin/admin -v
+  704  ktutil -v add -p justin/admin
+  705  ktutil -v add -p justin/admin
+  706  sudo ktutil -v add -p justin/admin
+  707  klist
+  708  sudo ktutil -v get -p justin/admin
+  709  sudo ktutil -v -p justin/admin get
+  710  sudo ktutil -v get -p justin/admin justin/admin
+  711  sudo ktutil -v get -p justin/admin justin/admin
+  712  ktutil
+  713  ktutil -v --help
+  714  ktutil --help
+  715  man ktutil
+  716  klist
+  717  kinit justin/admin@kerberos.thedemoco.com -k -t /etc/krb5.keytab 
+  718  man kinit
+  719  man kinit
+  720  kinit justin/admin@kerberos.thedemoco.com --use-keytab -t /etc/krb5.keytab
+  721  man kinit
+  722  kinit --use-keytab -t /etc/krb5.keytab justin/admin@kerberos.thedemoco.com
+  723  ktutil -v add -p justin/admin
+  724  ktutil -v add -p justin/admin
+  725  ktutil -v add -p justin/admin
+  726  ktutil -v add -p justin/admin
+  727  man ktutil
+  728  ktutil list --keys
+  729  man ktutil
+  730  sudo ktutil list
+  731  sudo ktutil list
+  732  sudo ktutil list
+  733  kinit justin/admin@kerberos.thedemoco.com --use-keytab -t /etc/krb5.keytab
+  734  kinit  --use-keytab -t /etc/krb5.keytab
+  735  sudo rm /etc/krb5.keytab 
+  736  sudo ktutil -v add -p justin/admin
+  737  sudo ktutil -v add -p justin/admin
+  738  sudo ktutil list
+  739  sudo ktutil -v add -p justin/admin
+  740  kinit  --use-keytab -t /etc/krb5.keytab
+  741  kinit  --use-keytab -t /etc/krb5.keytab
+  742  man kinit
+  743  man kinit
+  744  rm /etc/krb5.keytab 
+  745  sudo rm /etc/krb5.keytab 
+  746  ls
+  747  sudo ktutil -v get -p justin/admin
+  748  sudo ktutil -v get justin/admin
+  749  sudo ktutil -v get justin/admin
+  750  sudo ktutil -v add 
+  751  ktutil list
+  752  sudo ktutil list
+  753  sudo ktutil -v add -p justin/admin
+  754  sudo ktutil list
+  755  sudo kinit --use-keytab
+  756  sudo kinit --use-keytab -t /etc/krb5.keytab 
+  757  kinit --version
+  758  ktutil --version
+  759  sudo kinit --use-keytab -t /etc/krb5.keytab -p justin/admin
+  760  sudo vim [kdc]
+  761  sudo vim /etc/krb5.conf 
+  762  sudo kinit --use-keytab -t /etc/krb5.keytab -p justin/admin
+  763  ping kerberos.thedemoco.com
+  764  ls
+  765  sudo kinit --use-keytab -t /etc/krb5.keytab -p justin/admin
+  766  man kinit
+  767  krb5.conf
+  768  man kinit
+  769  man msktutil
+  770  msktutil
+  771  sudo kinit -k justin/admin
+  772  ls /etc/krb5.keytab 
+  773  sudo rm /etc/krb5.keytab 
+  774  hgrep ktutil
+  775  sudo ktutil -v get -p justin/admin
+  776  sudo ktutil -v get -p justin/admin justin/admin
+  777  ls
+  778  ls
+  779  ls
+  780  history >> diff.txt

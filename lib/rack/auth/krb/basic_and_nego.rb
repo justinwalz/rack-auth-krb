@@ -20,13 +20,16 @@ module Rack
         end
 
         def call(env)
-
+          puts "starting..."
           a = nil
           
           if @paths_only.empty? or @paths_only.include?(env["PATH_INFO"])
+
             # Either user rack.logger if defined or create on
             # logger defaulting to rack.errors
             logger = env['rack.logger'] || ::Logger.new(env['rack.errors'])
+            @service = 'KERBEROS.THEDEMOCO.COM'
+            logger.debug "service = #{@service}"
             a = ::BasicAndNego::Processor.new(env, logger, @realm, @keytab, @service)
             a.process_request
             return a.response if a.response

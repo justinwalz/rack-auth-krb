@@ -11,9 +11,12 @@ module BasicAndNego
       def initialize(logger, service, realm, keytab)
         @logger = logger
         @service = service
+
         @realm = realm
         @keytab = keytab
+        puts "creating GSSAPI wih @realm = #{@realm.inspect}, @service = #{@service.inspect}, @keytab = #{@keytab.inspect}"
         @gssapi = GSSAPI::Simple.new(@realm, @service, @keytab)
+        # @gssapi = GSSAPI::Simple.new(@realm, nil, nil)
 
         gssapi.acquire_credentials
       end

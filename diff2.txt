@@ -1,0 +1,500 @@
+   46  git st
+   47  git st
+   48  git push origin jw_additional_filters_for_events 
+   49  git st
+   50  git st
+   51  git co master
+   52  tail -f log/development.log 
+   53  cd ../newton
+   54  tail -f log/development.log 
+   55  vagrant box update
+   56  pwd
+   57  cd justinwalz/
+   58  ls
+   59  mkdir neural-net
+   60  cd neural-net/
+   61  ls
+   62  git clonse git clone https://github.com/mnielsen/neural-networks-and-deep-learning.git
+   63  git clone https://github.com/mnielsen/neural-networks-and-deep-learning.git
+   64  brew search numpy
+   65  brew install numpy
+   66  brew install homebrew/python/numpy
+   67  ls
+   68  mate .
+   69  cd neural-networks-and-deep-learning/
+   70  mate .
+   71  python
+   72  ls
+   73  ls
+   74  cd src/
+   75  ls
+   76  python
+   77  brew update
+   78  brew upgrade opensll
+   79  brew upgrade openssl
+   80  brew update
+   81  brew upgrade
+   82  ls
+   83  cd ../maxwell/
+   84  bundle exec rails c
+   85  bundle exec rails c
+   86  gem install pg_histogram
+   87  ruby -v
+   88  bundle exec rails c
+   89  ls
+   90  vim Gemfile
+   91  bundle install
+   92  pwd
+   93  ls
+   94  bundle exec rails c
+   95  ls
+   96  cd ../newton
+   97  bundle exec rails c
+   98  gem install pg_histogram
+   99  sudo tunnel
+  100  sudo tunnels
+  101  tail -f log/development.log 
+  102  cd ../maxwell/
+  103  git st
+  104  git d
+  105  git branch
+  106  git co -b jw_scoring_2
+  107  git add .
+  108  git ci -m "temp"
+  109  git st
+  110  git co jw_app_scoring_system 
+  111  git st
+  112  git log
+  113  git log -p
+  114  git st
+  115  git branch
+  116  git co master
+  117  git pull
+  118  git st
+  119  ls
+  120  git branch
+  121  git branch | grep squid
+  122  git co jw_squid_alternate_proxy 
+  123  git log
+  124  git co squid_playground 
+  125  git log
+  126  git co jw_squid_alternate_proxy 
+  127  git st
+  128  git log -p
+  129  git st
+  130  git log
+  131  git log -p
+  132  git st
+  133  git d
+  134  git st
+  135  git add .
+  136  git ci -m "PROXY setting to switch on and off"
+  137  bundle exec rails c
+  138  git st
+  139  git d
+  140  git co -- app/models/app_report.rb
+  141  git st
+  142  git branch
+  143  git co jw_scoring_2 
+  144  git st
+  145  git st
+  146  git log
+  147  git log -p
+  148  bundle exec rails c
+  149  cd ../maxwell/
+  150  bundle exec rails c
+  151  bundle exec rails c
+  152  ls
+  153  cd ../kepler/
+  154  ls
+  155  ack mechanize
+  156  git pull
+  157  cd ../squid/
+  158  ls
+  159  vim health_check.sh
+  160  chmod +x health_check.sh 
+  161  ./health_check.sh 
+  162  which wget
+  163  vim health_check.sh 
+  164  ./health_check.sh 
+  165  wget https://www.google.com/
+  166  ls
+  167  rm index.html 
+  168  ls
+  169  rm index.html 
+  170  ./health_check.sh 
+  171  ./health_check.sh 
+  172  ./health_check.sh 
+  173  ls
+  174  vim health_check.sh 
+  175  ls
+  176  vim health_check.sh 
+  177  ./health_check.sh 
+  178  ls
+  179  cat health_check.sh 
+  180  curl https://www.google.com/
+  181  vim health_check.sh 
+  182  ./health_check.sh 
+  183  echo $0
+  184  vat health_check.sh 
+  185  cat health_check.sh 
+  186  echo $?
+  187  curl asdf
+  188  $?
+  189  curl asdf
+  190  echo $?
+  191  curl 192.168.13.37:3128
+  192  echo $?
+  193  curl google.com
+  194  echo $?
+  195  vim health_check.sh 
+  196  ./health_check.sh 
+  197  ./health_check.sh 
+  198  vim health_check.sh 
+  199  vim health_check.sh 
+  200  ./health_check.sh 
+  201  vim health_check.sh 
+  202  ./health_check.sh 
+  203  man curl
+  204  vim health_check.sh 
+  205  ./health_check.sh 
+  206  curl -s google.com
+  207  curl -s http://www.google.com
+  208  curl --silent http://www.google.com
+  209  curl --silent http://www.example.com/ > /dev/null
+  210  curl --silent http://www.example.com/ > /dev/null
+  211  echo $?
+  212  vim health_check.sh 
+  213  ./health_check.sh 
+  214  cat health_check.sh 
+  215  vim health_check.sh 
+  216  ./health_check.sh 
+  217  ./health_check.sh 
+  218  ./health_check.sh 
+  219  ./health_check.sh 
+  220  ./health_check.sh 
+  221  ls
+  222  man wget
+  223  wget -q https://www.google.com
+  224  ls
+  225  rm index.html 
+  226  wget -q https://www.google.com
+  227  echo $?
+  228  wget -q -O /dev/null https://www.google.com
+  229  ls
+  230  rm index.html 
+  231  ls
+  232  wget -q -O /dev/null https://www.google.com
+  233  ls
+  234  ls
+  235  wget -q -O /dev/null https://www.google.com
+  236  echo $?
+  237  wget -q -O /dev/null https://www.googlasdfasdfasdfasdfe.com
+  238  echo $?
+  239  vim health_check.sh 
+  240  ./health_check.sh 
+  241  ./health_check.sh 
+  242  ./health_check.sh 
+  243  ls
+  244  vim health_check.sh 
+  245  echo $HTTPS_PROXY
+  246  export HTTPS_PROXY=http://192.168.13.37:3128/
+  247  echo $HTTPS_PROXY
+  248  wget -q -O /dev/null https://www.google.com
+  249  ls
+  250  wget -q -O /dev/null https://www.google.com
+  251  echo $?
+  252  wget -q https://www.google.com
+  253  ls
+  254  ls
+  255  rm index.html 
+  256  ls
+  257  curl http://192.168.13.37:3128
+  258  curl http://192.168.13.37:3128
+  259  ls
+  260  vagrant ssh
+  261  cd ../archimedes/
+  262  git st
+  263  git log
+  264  git pull
+  265  cd ../squid/
+  266  ls
+  267  git st
+  268  vagrant global-status
+  269  vagrant ssh
+  270  vagrant up
+  271  cd /Users/justinw/sandbox/kerberos/KerbTestEnvironment
+  272  vagrant destroy
+  273  cd  /Users/justinw/sandbox/clients/services   
+  274  vagrant destroy
+  275  cd /Users/justinw/bitium/squid 
+  276  vagrant up
+  277  vagrant ssh
+  278  cd ../maxwell/
+  279  tail -f log/development.log 
+  280  script/kill_apps ; foreman start
+  281  script/kill_apps ; foreman start
+  282  bundle exec rake db:migrate
+  283  script/kill_apps ; foreman start
+  284  script/kill_apps ; foreman start
+  285  vagrant ssh
+  286  tail -f log/development.log 
+  287  cd
+  288  cd bitium/newton
+  289  run 
+  290  RAILS_ENV=DEV bundle exec rake bitium:one_off:populate_empty_installation_name
+  291  bundle exec rails c
+  292  ls
+  293  git branch
+  294  git st
+  295  git st
+  296  git log
+  297  git log -p
+  298  pwd
+  299  git st
+  300  git d
+  301  git add .
+  302  git ci -m "more commenting"
+  303  git st
+  304  git st
+  305  git log
+  306  git st
+  307  ls
+  308  git branch
+  309  git branch | grep squid
+  310  git branch
+  311  git co master
+  312  git pull
+  313  git st
+  314  gem install propono
+  315  cd sandbox/clients/
+  316  ls
+  317  ruby publisher.rb 
+  318  irb
+  319  ls
+  320  bundle exec ruby publisher.rb 
+  321  bundle exec ruby publisher.rb 
+  322  bundle exec ruby publisher.rb 
+  323  ls
+  324  pwd
+  325  mkdir services
+  326  mkdir clients
+  327  cd clients/
+  328  vagrant init
+  329  ls
+  330  vim Vagrantfile 
+  331  mate .
+  332  cd ..
+  333  ls
+  334  cat publisher.rb 
+  335  ls
+  336  ls services/
+  337  ls clients/
+  338  ls
+  339  mv clients/Vagrantfile services/
+  340  ls
+  341  mate .
+  342  ls
+  343  cd services/
+  344  ls
+  345  cd ..
+  346  ls
+  347  touch README
+  348  cd services/
+  349  ls
+  350  vagrant up
+  351  vagrant up
+  352  ls
+  353  ls
+  354  vagrant up
+  355  vagrant ssh
+  356  cd s
+  357  cd sandbox/
+  358  mkdir clients
+  359  cd clients/
+  360  ls
+  361  ls
+  362  pwd
+  363  touch publisher.rb
+  364  touch subscriber.rb
+  365  mate .
+  366  ruby subscriber.rb 
+  367  ruby subscriber.rb 
+  368  ls
+  369  gem
+  370  bundle
+  371  ls
+  372  bundle --help
+  373  bundle init
+  374  ls
+  375  bundle install
+  376  ls
+  377  bundle exec ruby subscriber.rb 
+  378  ls
+  379  cd ../..
+  380  ls
+  381  cd squid
+  382  cd ..
+  383  ls
+  384  cd 41a24a7252fa92633c02/
+  385  ls
+  386  cd ..
+  387  ls
+  388  cd 
+  389  cd bitium/squid/
+  390  ls
+  391  cat Vagrantfile 
+  392  pwd
+  393  ls
+  394  git st
+  395  git d
+  396  git st
+  397  git st
+  398  git d
+  399  git add .
+  400  git ci -m "a bunch of comments and stuff"
+  401  git st
+  402  git log
+  403  git co master
+  404  git co -b jw_primary_auth_stuck_3587
+  405  git st
+  406  bundle exec rake db:migrate
+  407  git st
+  408  git d
+  409  git co -b db/schema.rb
+  410  git st
+  411  git co jw_primary_auth_stuck_3587
+  412  git branch
+  413  git branch -D db/schema.rb
+  414  git st
+  415  git co -- db/schema.rb
+  416  git st
+  417  ls
+  418  git st
+  419  git d
+  420  git add .
+  421  git ci -m "comments"
+  422  git branch
+  423  git co jw_broswer_domain_auth_5223
+  424  curl --negotiate ad.thedemoco.com
+  425  curl --headers --negotiate ad.thedemoco.com
+  426  curl --manual
+  427  curl -k -s -D - http://trust.bitium.com/resources/topic/case-studies
+  428  curl -k -s -D - http://trust.bitiucurl -k -s -D - http://trust.bitium.com/resources/topic/case-studies -o /dev/nullm.com/resources/topic/case-studies
+  429  curl -k -s -D - http://trust.bitium.com/resources/topic/case-studies -o /dev/null
+  430  curl -k -s -D - http://trust.bitium.com/resources/topic/case-studies -o /dev/null
+  431  curl -k -s -D - ad.thedemoco.com -o /dev/null
+  432  curl -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  433  curl -k -s -D - ad.thedemoco.com:88
+  434  curl --negotiate -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  435  curl --negotiates -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  436  curl --negotiate -k -s -D - ad.thedemoco.com:88 -o /dev/null
+  437  bundle exec rails c
+  438  chromium-browser
+  439  man curl
+  440  curl --negotiate
+  441  curl --negotiate http://localhost:14000/webhdfs/v1/?op=liststatus
+  442  ls
+  443  sudo stunnel
+  444  sudo tunnels
+  445  cd
+  446  cd sandbox/
+  447  mkdir kerberos
+  448  cd kerberos/
+  449  ls
+  450  $ git clone      https://gist.github.com/econchick/99699a6fee2eb44d13b0      KerbTestEnvironment
+  451  $ cd KerbTestEnvironment
+  452  ls
+  453  git clone https://gist.github.com/econchick/99699a6fee2eb44d13b0 KerbTestEnvironment
+  454  cd KerbTestEnvironment/
+  455  ls
+  456  vagrant up
+  457  pwd
+  458  ls
+  459  cd 
+  460  ls
+  461  cd bitium/squid/
+  462  ls
+  463  cat Vagrantfile 
+  464  vagrant ssh
+  465  vagrant ssh
+  466  cd
+  467  cd sandbox/
+  468  mkdir kerberos
+  469  cd kerberos/
+  470  ls
+  471  rm -rf KerbTestEnvironment/
+  472  ls
+  473  vagrant init
+  474  vim Vagrantfile 
+  475  mate .
+  476  vagrant up
+  477  vagrant ssh
+  478  vagrant 
+  479  vagrant halt
+  480  vagrant up
+  481  vagrant ssh
+  482  vagrant reload && vagrant ssh
+  483  cd 
+  484  cd bitium/newton
+  485  foreman start
+  486  bundle install
+  487  gem install
+  488  gem install rack-auth-krb
+  489  bundle install
+  490  ls
+  491  rspec spec/rack/rack_krb_spec.rb 
+  492  cd /Users/justinw/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/extensions/x86_64-darwin-14/2.1.0-static/krb5-auth-0.7
+  493  ls
+  494  ls
+  495  cat krb5_auth.bundle 
+  496  ls
+  497  cd ..
+  498  ls
+  499  rm -rf krb5-auth-0.7/
+  500  vagrant ssh
+  501  ls
+  502  rspec spec/rack/rack_krb_spec.rb 
+  503  rspec spec/rack/rack_krb_spec.rb 
+  504  rspec spec/rack/rack_krb_spec.rb 
+  505  rspec spec/rack/rack_krb_spec.rb 
+  506  rspec
+  507  rspec
+  508  rspec
+  509  bundle show gssapi
+  510  bundle exec rspec
+  511  rspec
+  512  bundle exec rspec
+  513  bundle exec rspec
+  514  bundle exec rspec
+  515  bundle exec rspec
+  516  hostname
+  517  bundle exec rspec
+  518  bundle exec rspec
+  519  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  520  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  521  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  522  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  523  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  524  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  525  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  526  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  527  bundle exec rspec spec/rack/rack_krb_spec.rb 
+  528  cat /etc/krb5.
+  529  cat /etc/krb5.conf 
+  530  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  531  bundle exec irb
+  532  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  533  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  534  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  535  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  536  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  537  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  538  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  539  sudo bundle exec rspec spec/rack/rack_krb_spec.rb 
+  540  klist
+  541  cat /etc/krb5.keytab
+  542  kinit
+  543  ls
+  544  kinit
+  545  history >> diff2.txt

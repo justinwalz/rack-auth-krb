@@ -17,64 +17,65 @@ describe BasicAndNego::Auth::Negotiate do
   end
 
   it "should try authentication against GSS in case of Negotiate" do
-    BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
+    allow(BasicAndNego::Auth::GSS).to receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
+    # BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
     @a = BasicAndNego::Auth::Negotiate.new(@request, @logger, @realm, @keytab, @service)
-    @gss.should_receive(:authenticate).and_return("Granted")
-    @gss.should_receive(:display_name).and_return("fred")
+    allow(@gss).to receive(:authenticate).and_return("Granted")
+    allow(@gss).to receive(:display_name).and_return("fred")
     @a.process
   end
 
   it "should return 'unauthorized' if authentication fails" do 
-    BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
+    allow(BasicAndNego::Auth::GSS).to receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
     @a = BasicAndNego::Auth::Negotiate.new(@request, @logger, @realm, @keytab, @service)
-    @gss.should_receive(:authenticate).and_return(nil)
+    allow(@gss).to receive(:authenticate).and_return(nil)
     @a.process
-    @a.response.should_not be_nil
-    @a.response[0].should == 401
+    expect(@a.response).to_not be_nil
+    expect(@a.response[0]).to eq(401)
   end
 
   it "should return true if authentication worked" do
-    BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
+    allow(BasicAndNego::Auth::GSS).to receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
     @a = BasicAndNego::Auth::Negotiate.new(@request, @logger, @realm, @keytab, @service)
-    @gss.should_receive(:authenticate).and_return("Granted")
+    allow(@gss).to receive(:authenticate).and_return("Granted")
     @a.process
-    @a.response.should be_nil
+    expect(@a.response).to be_nil
   end
 
   it "should set client's name if authentication worked" do
-    BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
+    allow(BasicAndNego::Auth::GSS).to receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
     @a = BasicAndNego::Auth::Negotiate.new(@request, @logger, @realm, @keytab, @service)
-    @gss.should_receive(:authenticate).and_return("Granted")
-    @gss.should_receive(:display_name).and_return("fred")
+    allow(@gss).to receive(:authenticate).and_return("Granted")
+    allow(@gss).to receive(:display_name).and_return("fred")
     @a.process
-    @a.client_name.should == "fred"
+    expect(@a.client_name).to eq("fred")
   end
 
   it "should set header to returned token if authentication worked" do
-    BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
+    allow(BasicAndNego::Auth::GSS).to receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
     @a = BasicAndNego::Auth::Negotiate.new(@request, @logger, @realm, @keytab, @service)
-    @gss.should_receive(:authenticate).and_return("Granted")
-    @gss.should_receive(:display_name).and_return("fred")
+    allow(@gss).to receive(:authenticate).and_return("Granted")
+    allow(@gss).to receive(:display_name).and_return("fred")
     @a.process
-    @a.client_name.should == "fred"
-    @a.headers['WWW-Authenticate'].should == "Negotiate #{::Base64.strict_encode64('Granted')}"
+    expect(@a.client_name).to eq("fred")
+    expect(@a.headers['WWW-Authenticate']).to eq("Negotiate #{::Base64.strict_encode64('Granted')}")
   end
 
   it "should catch GSSAPI exceptions in getting credentials" do
-    BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_raise(GSSAPI::GssApiError)
+    allow(BasicAndNego::Auth::GSS).to receive(:new).with(@logger, @service, @realm, @keytab).and_raise(GSSAPI::GssApiError)
     @a = BasicAndNego::Auth::Negotiate.new(@request, @logger, @realm, @keytab, @service)
     @a.process
-    @a.response.should_not be_nil
-    @a.response[0].should == 500
+    expect(@a.response).to_not be_nil
+    expect(@a.response[0]).to eq(500)
   end
 
   it "should catch GSSAPI exceptions in authenticating token" do
-    BasicAndNego::Auth::GSS.should_receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
+    allow(BasicAndNego::Auth::GSS).to receive(:new).with(@logger, @service, @realm, @keytab).and_return(@gss)
     @a = BasicAndNego::Auth::Negotiate.new(@request, @logger, @realm, @keytab, @service)
-    @gss.should_receive(:authenticate).and_raise(GSSAPI::GssApiError)
+    allow(@gss).to receive(:authenticate).and_raise(GSSAPI::GssApiError)
     @a.process
-    @a.response.should_not be_nil
-    @a.response[0].should == 401
+    expect(@a.response).to_not be_nil
+    expect(@a.response[0]).to eq(401)
   end
 
 end

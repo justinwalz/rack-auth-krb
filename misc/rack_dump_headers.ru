@@ -4,7 +4,7 @@ infinity = Proc.new {|env| [200, {"Content-Type" => "text/html"}, ["Hello #{env[
 
 use Rack::Session::Cookie
 use Rack::Logger, ::Logger::DEBUG
-use Rack::Auth::Krb::BasicAndNego, 'my realm', 'my keytab'
+use Rack::Auth::Krb::BasicAndNego, 'KERBEROS.THEDEMOCO.COM', '/etc/user.keytab'
 
 map '/' do
   run infinity
