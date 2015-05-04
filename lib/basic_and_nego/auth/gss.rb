@@ -14,7 +14,7 @@ module BasicAndNego
 
         @realm = realm
         @keytab = keytab
-        puts "creating GSSAPI wih @realm = #{@realm.inspect}, @service = #{@service.inspect}, @keytab = #{@keytab.inspect}"
+        @logger.debug "creating GSSAPI wih @realm = #{@realm.inspect}, @service = #{@service.inspect}, @keytab = #{@keytab.inspect}"
         @gssapi = GSSAPI::Simple.new(@realm, @service, @keytab)
         # @gssapi = GSSAPI::Simple.new(@realm, nil, nil)
 
@@ -28,10 +28,12 @@ module BasicAndNego
       # by the gssapi if the authentication is successfull
       #
       def authenticate(token)
+        @logger.debug "Accepting context with token #{token} [GSS]"
         return gssapi.accept_context(token)
       end
 
       def display_name
+        @logger.debug "Getting display name [GSS]"
         return gssapi.display_name
       end
     end

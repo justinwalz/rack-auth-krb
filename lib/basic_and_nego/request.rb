@@ -24,6 +24,8 @@ module BasicAndNego
 
     def credentials
       @credentials ||= params.unpack("m*").first.split(/:/, 2)
+      puts "credentials = #{@credentials}"
+      @credentials
     end
 
     def username
